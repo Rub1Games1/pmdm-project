@@ -132,3 +132,33 @@ html, body {
 .display-none {
     display: none;
 }
+
+.menu {
+    display: none;
+    margin: 2.5%;
+    position: fixed;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: snow;
+    border: 2px solid white;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    z-index: 99;
+}
+
+#leftMenu {
+    display: none;
+    left: 0;
+}
+
+.menu > .fa {
+    margin: 0;
+}
+
+#rightMenu {
+    display: none;
+    right: 0;
+}
