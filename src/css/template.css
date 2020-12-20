@@ -1,7 +1,3 @@
-html,body {
-    
-}
-
 .jumbotron-fluid {
     color: white;
     background: linear-gradient(rgba(250, 0, 0, 0.35),  rgba(250, 192, 125, 0.25)),url("https://wallpaper.dog/large/852780.png");
@@ -9,6 +5,12 @@ html,body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.vertical-center {
+
+  display: flex;
+  align-items: center;
 }
 
 .btn-group {
@@ -31,7 +33,7 @@ html,body {
 }
 
 blockquote {
-    margin-top: 5vh;
+    margin: 2.5vh;
 }
 
 .jumbotron-fluid > .container {
