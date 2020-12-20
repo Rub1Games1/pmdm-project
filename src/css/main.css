@@ -138,8 +138,6 @@ html, body {
     margin: 2.5%;
     position: fixed;
     top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     background-color: snow;
     border: 2px solid white;
     display: inline-block;
