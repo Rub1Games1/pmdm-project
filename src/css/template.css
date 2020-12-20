@@ -1,14 +1,4 @@
-.jumbotron-fluid {
-    color: white;
-    background: linear-gradient(rgba(250, 0, 0, 0.35),  rgba(250, 192, 125, 0.25)),url("https://wallpaper.dog/large/852780.png");
-    height: 75vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .vertical-center {
-
   display: flex;
   align-items: center;
 }
@@ -17,6 +7,10 @@
     position: absolute;
     top: -15px;
     left: 20px;
+}
+
+.btn {
+    margin-right: 10px;
 }
 
 .btn-outline-primary{
@@ -46,18 +40,8 @@ blockquote {
   margin: 0 !important;
 }
 
-.gallery {
-    color: white;
-    background: linear-gradient(rgba(250, 0, 0, 0.35),  rgba(250, 192, 125, 0.25)),url("https://wallpaper.dog/large/852780.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-}
-
 img {
     width:100%;
-    height:auto;
     border: 2px solid white;
     transition: 2s;
 }
@@ -89,8 +73,6 @@ video {
     margin: 2.5%;
     position: fixed;
     top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     background-color: snow;
     border: 2px solid white;
     display: inline-block;
@@ -112,8 +94,4 @@ video {
 #rightMenu {
     display: none;
     right: 0;
-}
-
-.btn {
-    margin-right: 10px;
 }

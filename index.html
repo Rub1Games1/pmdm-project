@@ -8,8 +8,18 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="src/css/main.css">
+        <link rel="stylesheet" href="src/css/template.css">
     </head>
     <body>
+        <div id="leftMenu" class="menu"><i class="fa fa-arrow-left"></i></div>
+        <div id="rightMenu" class="menu"><i class="fa fa-arrow-right"></i></div>
+        <div class="btn-group">
+            <a href="index.html"><button class="btn btn-outline-primary">Home</button></a>
+            <a href="index1.html"><button class="btn btn-outline-primary">CS:GO</button></a>
+            <a href="index2.html"><button class="btn btn-outline-primary">Cyberpunk</button></a>
+            <a href="index3.html"><button class="btn btn-outline-primary">FIFA Vs PES</button></a>
+            <a href="index4.html"><button class="btn btn-outline-primary">Home</button></a>
+        </div>
         <section class="banner">
             <img class="banner-img" src="https://png.pngtree.com/png-vector/20190909/ourlarge/pngtree-ninja-e-sports-logo-vector-illustration-ninja-gaming-mascot-png-image_1726562.jpg">
             <div class="section-footer text-center">
@@ -23,8 +33,8 @@
                 </h1>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg  col-md-6 col-sm-6">
-                    <a href="csgo.html">
+                <div class="col-lg col-md-6 col-sm-6">
+                    <a href="index1.html">
                         <div class="card bg-dark text-white">
                             <img class="card-img img" src="https://paradoxalnews.com/wp-content/uploads/2020/05/csgo-1.jpg" alt="CsgoImage">
                             <video class="card-img display-none" src="src/video/csgo.mp4" muted></video>
@@ -34,9 +44,8 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="col-lg col-md-6 col-sm-6">
-                    <a href="csgo.html">
+                    <a href="index2.html">
                         <div class="card bg-dark text-white">
                             <img class="card-img img" src="https://cdn.mos.cms.futurecdn.net/rLh7Dh7EKo8F6zmDtXYp8W.jpg" alt="CyberImage">
                             <video class="card-img display-none" src="src/video/cyberpunk.mp4" muted></video>
@@ -46,9 +55,18 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="col-lg col-md-6 col-sm-6">
-                    <a href="csgo.html">
+                    <a href="index3.html">
+                        <div class="card bg-dark text-white">
+                            <img class="card-img img" src=https://images.daznservices.com/di/library/GOAL/8b/a5/fifa-20-pes2020-split_o7rbt1kbvuhw1v3o81enojeyg.jpg?t=133613985&quality=100" alt="Card image">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title hidden">FIFA vs PES</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg col-md-6 col-sm-6">
+                    <a href="index4.html">
                         <div class="card bg-dark text-white">
                             <img class="card-img img" src="https://i.pinimg.com/originals/ff/c3/8d/ffc38d9bce22d7a9eaa07b890e3af1a2.jpg" alt="Card image">
                             <div class="card-img-overlay">
@@ -57,26 +75,10 @@
                         </div>
                     </a>
                 </div>
-
-                <div class="col-lg col-md-6 col-sm-6">
-                    <a href="csgo.html">
-                        <div class="card bg-dark text-white">
-                            <img class="card-img img" src="https://i.pinimg.com/originals/ff/c3/8d/ffc38d9bce22d7a9eaa07b890e3af1a2.jpg" alt="Card image">
-                            <div class="card-img-overlay">
-                              <h5 class="card-title hidden">CS:GO</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
             </div>
         </section>
-        <footer class="bg-dark text-white text-center text-lg-start">
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-              © 2020 Copyright: Rúben Cipriano, David Sobral, Hugo
-            </div>
-        </footer>
+        <script src="src/js/footer.js"></script>
         <script src="src/js/main.js"></script>
+        <script src="src/js/template.js"></script>
     </body>
 </html>
