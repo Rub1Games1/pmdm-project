@@ -1,0 +1,72 @@
+html,body {
+    
+}
+
+.jumbotron-fluid {
+    color: white;
+    background: linear-gradient(rgba(250, 0, 0, 0.35),  rgba(250, 192, 125, 0.25)),url("https://wallpaper.dog/large/852780.png");
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.btn-group {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+}
+
+.btn-outline-primary{
+    border-color: white;
+    color:white;
+    background-color:transparent;
+    margin-top:30px;
+}
+
+.btn-outline-primary:hover{
+    border-color: transparent;
+    color:black;
+    background-color:white;
+}
+
+blockquote {
+    margin-top: 5vh;
+}
+
+.jumbotron-fluid > .container {
+    margin-bottom: 5vh;
+}
+
+.gallery {
+    color: white;
+    background: linear-gradient(rgba(250, 0, 0, 0.35),  rgba(250, 192, 125, 0.25)),url("https://wallpaper.dog/large/852780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+img {
+    width:100%;
+    height:auto;
+    border: 2px solid white;
+    transition: 2s;
+}
+
+.row {
+    margin: 0;
+    margin-top: 5vh;
+}
+
+.col {
+    padding: 2.5%;
+}
+.gallery-img:hover {
+    transform: scale(1.25);
+}
+
+.topic {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
