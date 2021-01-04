@@ -1,0 +1,88 @@
+.menu {
+    display: block;
+    margin: 1.5%;
+    position: fixed;
+    top: 85%;
+    background-color: yellow;
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    z-index: 99;
+    cursor: pointer;
+}
+
+#leftMenu {
+    display: table;
+    left: 0;
+}
+.menu > .fa {
+    display: table-row;
+    margin: 0;
+}
+
+#rightMenu {
+    display: table;
+    right: 0;
+}
+  .btn {
+    margin-right: 10px;
+  }
+  .btn-group {
+      position: absolute;
+      top: -15px;
+      left: 20px;
+  }
+
+    .btn-outline-primary{
+        border-color: transparent;
+        color:  white;
+        background-color:  rgba(30,30,30,0.5);
+        margin-top:30px;
+    }
+
+    .btn-outline-primary:hover{
+        border-color: transparent;
+        color:  yellow;
+        background-color:  rgba(30,30,30,0.3);
+    }
+
+    video {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        transition: 0.5s;
+    }
+    .img-inicial {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .col-lg-4, .col-md-6, .col-sm-12 { 
+        padding: 20px;
+    }
+    .informacao-video {
+        background-color: rgba(19, 19, 19,0.7);
+        color: rgb(211, 214, 0);
+        text-align: center;
+
+    }
+    .container-fluid{
+        background: url('https://sm.ign.com/ign_pt/gallery/c/cyberpunk-/cyberpunk-2077-25-new-night-city-images_j7rj.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .col-lg-4 > img:hover {
+        transform: scale(1.05);
+
+    }
+
+@media screen and (max-width: 496px) {
+  .btn-group {
+    display: none;
+  }
+}
