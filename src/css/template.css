@@ -5,15 +5,11 @@
 
 .btn-group {
     position: absolute;
-    top: -15px;
+    top: 15px;
     left: 20px;
 }
 
-.btn {
-    margin-right: 10px;
-}
-
-.btn-outline-primary{
+.btn-outline-primcary{
     border-color: white;
     color:white;
     background-color:transparent;
@@ -42,6 +38,7 @@ blockquote {
 
 img {
     width:100%;
+    height:auto;
     border: 2px solid white;
     transition: 2s;
 }
@@ -51,9 +48,10 @@ img {
     margin-top: 5vh;
 }
 
-.col {
+.col-sm-12, .col-md-6, .col-lg-4 {
     padding: 2.5%;
 }
+
 .gallery-img:hover {
     transform: scale(1.25);
 }
@@ -69,29 +67,40 @@ video {
 }
 
 .menu {
-    display: none;
-    margin: 2.5%;
-    position: fixed;
-    top: 50%;
-    background-color: snow;
-    border: 2px solid white;
-    display: inline-block;
-    border-radius: 50%;
-    padding: 15px;
-    text-align: center;
-    z-index: 99;
+  display: block;
+  margin: 1.5%;
+  position: fixed;
+  top: 87.5%;
+  background-color: white;
+  border: 2px solid black;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+  z-index: 99;
+  cursor: pointer;
 }
 
 #leftMenu {
-    display: none;
+    display: table;
     left: 0;
 }
-
 .menu > .fa {
+    display: table-row;
     margin: 0;
 }
 
 #rightMenu {
-    display: none;
+    display: table;
     right: 0;
 }
+
+.btn {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 496px) {
+  .btn-group {
+    display: none;
+  }
+}s

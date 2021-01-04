@@ -1,0 +1,69 @@
+.container-fluid {
+    background: url("https://images3.alphacoders.com/952/thumb-1920-952165.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+
+.informacao-video {
+    background-color: rgba(36, 36, 36, 0.7);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+    padding: 2.5rem 0 2.5rem 0;
+}
+
+.img-inicial {
+    height: 400px;
+    object-fit: cover;
+    object-position: 0 75% !important;
+}
+
+.btn-outline-primary:hover{
+    border-color: transparent;
+    color:  grey;
+    background-color:  rgba(30,30,30,0.3);
+}
+
+.menu {
+    display: block;
+    margin: 1.5%;
+    position: fixed;
+    top: 87.5%;
+    background-color: white;
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.video-trailer {
+    background-color: black !important;
+    padding: 5%;
+}
+
+
+.video-trailer > h1 {
+    padding: 0 5% 5% 5%;
+}
+
+.border-right {
+    border-right: 2px solid white !important;
+}
+
+.col-lg-6, .col-lg-6 > p, .col-lg-12 > p, .col-lg-12 > h1, .col-lg-6 > h1 {
+    padding: 10px;
+}
+
+.col-lg-12 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.col-sm-12 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
