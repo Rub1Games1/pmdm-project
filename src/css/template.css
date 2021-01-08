@@ -1,27 +1,213 @@
-.vertical-center {
-  display: flex;
-  align-items: center;
+body {
+    position: relative;
+    height: auto;
+    min-height: 100% !important;
+  }
+
+
+/* TAGS*/
+
+a, a:active, a:hover, a:link {
+    color: white;
+    text-decoration: none;
 }
+
+a:hover {
+    color: white;
+}
+
+
+video {
+    width: 100%;
+}
+
+.video-forza {
+    margin: 10%;
+}
+
+.informacao-video {
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+    color: white;
+    margin: 1.5em;
+}
+
+img { 
+    width:100%;
+    height:auto;
+    transition: 2s;
+}
+
+.img-inicial {
+    object-fit: cover;
+}
+
+.forza-img-inicial{
+    height: 450px;
+    object-position: 0 15%;
+}
+
+.cyberpunk-img-inicial {
+    height: 400px;
+    object-position: 0 50%;
+}
+
+/* bottom arrows*/
+
+.menu {
+    display: block;
+    margin: 1.5%;
+    position: fixed;
+    top: 87.5%;
+    background-color: white;
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.menu > .fa {
+    display: table-row;
+    margin: 0;
+}
+
+#leftMenu {
+    display: table;
+    left: 0;
+}
+
+#rightMenu {
+    display: table;
+    right: 0;
+}
+
+/* bottom arrows*/
+
+
+/* top menu */
 
 .btn-group {
     position: absolute;
-    top: 15px;
+    top: -15px;
     left: 20px;
 }
 
-.btn-outline-primcary{
-    border-color: white;
-    color:white;
-    background-color:transparent;
+.btn {
+    margin-right: 10px;
+}
+
+.btn-outline-primary{
+    border-color: transparent;
+    color:  white;
+    background-color:  rgba(30,30,30,0.5);
     margin-top:30px;
 }
 
 .btn-outline-primary:hover{
     border-color: transparent;
-    color:black;
-    background-color:white;
+    color:  rgb(0, 0, 0);
+    background-color:  rgba(30,30,30,0.3);
 }
 
+@media screen and (max-width: 496px) {
+    .btn-group {
+      display: none;
+    }
+}
+
+/* top menu */
+
+/*container, columns and rows*/
+
+.container-fluid {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.col-lg-6 {
+    padding: 40px;
+}
+
+.col-sm-12 {
+    padding: 2.5%;
+}
+
+.col-sm-12 > img {
+    border: 2px solid white;
+}
+
+.col-sm-12 > img:hover {
+    transform: scale(1.05);
+}
+
+/*container, columns and rows*/
+
+/*backgrounds*/
+
+.cyberpunk-background {
+    background: url('https://sm.ign.com/ign_pt/gallery/c/cyberpunk-/cyberpunk-2077-25-new-night-city-images_j7rj.jpg');
+}
+
+.pes-background {
+    background: url("https://images3.alphacoders.com/952/thumb-1920-952165.jpg");
+}
+
+.forza-background {
+    background: url("https://d2ofqe7l47306o.cloudfront.net/games/1920x1080/forza-horizon-4-car-30.jpg");
+}
+
+.gray-background {
+    background-color: rgba(0,0,0,0.5)
+}
+
+.background-csgo {
+    color: white;
+    background: linear-gradient(rgba(250, 0, 0, 0.25),  rgba(15, 15, 15, 0.712)),url("https://wallpaper.dog/large/852780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.bg-darker {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*backgrounds*/
+
+/* download section */
+.download-section {
+    height: 25vh;
+}
+.btn-download {
+    background-color: red;
+    padding: 15px;
+    margin: 20px;
+    font-weight: bold;
+    border-radius: 25px 5px 15px 5px;
+    transition: 1s;
+    width: 25%;
+}
+
+.btn-download:hover {
+    background-color: darkred;
+}
+/* download section */
+
+/*Stuff*/
 blockquote {
     margin: 2.5vh;
 }
@@ -30,77 +216,31 @@ blockquote {
     margin-bottom: 5vh;
 }
 
-.video {
-  background-color: rgb(10,10,10);
-  color: white;
-  margin: 0 !important;
-}
-
-img {
-    width:100%;
-    height:auto;
-    border: 2px solid white;
-    transition: 2s;
-}
-
-.row {
-    margin: 0;
-    margin-top: 5vh;
-}
-
-.col-sm-12, .col-md-6, .col-lg-4 {
-    padding: 2.5%;
-}
-
-.gallery-img:hover {
-    transform: scale(1.25);
-}
-
 .topic {
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
-video {
-  width:100%;
-  height:auto;
+
+.gallery-img:hover {
+    transform: scale(1.25);
 }
 
-.menu {
-  display: block;
-  margin: 1.5%;
-  position: fixed;
-  top: 87.5%;
-  background-color: white;
-  border: 2px solid black;
-  display: inline-block;
-  border-radius: 50%;
-  padding: 15px;
-  text-align: center;
-  z-index: 99;
-  cursor: pointer;
+.download-section {
+    background-color: rgba(19, 19, 19,0.7);
+    text-align: center;
 }
 
-#leftMenu {
-    display: table;
-    left: 0;
-}
-.menu > .fa {
-    display: table-row;
+
+.jumbotron-fluid {
+    color: white;
+    background: linear-gradient(rgba(250, 0, 0, 0.35),  rgba(250, 192, 125, 0.25)),url("https://wallpaper.dog/large/852780.png");
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
+    padding: 0;
 }
 
-#rightMenu {
-    display: table;
-    right: 0;
-}
-
-.btn {
-    margin-right: 10px;
-}
-
-@media screen and (max-width: 496px) {
-  .btn-group {
-    display: none;
-  }
-}s
+/*Stuff*/

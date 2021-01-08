@@ -75,6 +75,7 @@ html, body {
 }
 
 .fa-angle-down {
+    margin-bottom: 7.5vh;
     animation: upDown 1s infinite;
 }
 
@@ -134,29 +135,53 @@ html, body {
 }
 
 .menu {
-    display: none;
-    margin: 2.5%;
+    display: block;
+    margin: 1.5%;
     position: fixed;
-    top: 50%;
-    background-color: snow;
-    border: 2px solid white;
+    top: 87.5%;
+    background-color: white;
+    border: 2px solid black;
     display: inline-block;
     border-radius: 50%;
     padding: 15px;
     text-align: center;
     z-index: 99;
+    cursor: pointer;
 }
 
 #leftMenu {
-    display: none;
+    display: table;
     left: 0;
 }
-
 .menu > .fa {
+    display: table-row;
     margin: 0;
 }
 
 #rightMenu {
-    display: none;
+    display: table;
     right: 0;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.btn-group {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+}
+
+.btn-outline-primary{
+    border-color: transparent;
+    color:  white;
+    background-color:  rgba(30,30,30,0.5);
+    margin-top:30px;
+}
+
+.btn-outline-primary:hover{
+    border-color: transparent;
+    color:  rgb(0, 0, 0);
+    background-color:  rgba(30,30,30,0.3);
 }
