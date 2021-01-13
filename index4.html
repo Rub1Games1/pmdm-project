@@ -8,25 +8,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/template.css">
 </head>
 <body>
     <div id="leftMenu" class="menu"><i class="fa fa-arrow-left"></i></div>
     <div id="rightMenu" class="menu"><i class="fa fa-arrow-right"></i></div>
-    <div class="btn-group">
-        <a href="index.html"><button class="btn btn-outline-primary">Home</button></a>
-        <a href="index1.html"><button class="btn btn-outline-primary">CS:GO</button></a>
-        <a href="index2.html"><button class="btn btn-outline-primary">Cyberpunk</button></a>
-        <a href="index3.html"><button class="btn btn-outline-primary">FIFA Vs PES</button></a>
-        <a href="index4.html"><button class="btn btn-outline-primary">Forza</button></a>
-    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html"><button class="btn btn-outline-primary">Home</button></a></li>
+            <li class="nav-item"><a href="index1.html"><button class="btn btn-outline-primary">CS:GO</button></a></li>
+            <li class="nav-item"><a href="index2.html"><button class="btn btn-outline-primary">Cyberpunk 2077</button></a></li>
+            <li class="nav-item"><a href="index3.html"><button class="btn btn-outline-primary">PES Vs FIFA</button></a></li>
+            <li class="nav-item"><a href="index4.html"><button class="btn btn-outline-primary">Forza Horizon 4</button></a></li>
+            <li class="nav-item"><a href="index5.html"><button class="btn btn-outline-primary">God of War</button></a></li>
+            </ul>
+        </div>
+    </nav>
     <div class='row'>
         <img class="img-inicial forza-img-inicial" src="https://compass-ssl.xbox.com/assets/6a/31/6a31393d-b0cc-4833-8e82-fd3a2c6b6e19.jpg?n=FH4_GLP-Page-Hero-1084_1920x1080_02.jpg" alt="img-inic">
     </div>
     <div class='container-fluid forza-background'>
         <div class="gray-background">
             <div class='row'>
-                <video class="video-forza" src="src/video/cyberpunk.mp4" controls>
+              <video class="video-forza" src="https://cdn.glitch.com/fd0d8884-e38b-41ec-88c5-15d3a666001b%2Fy2mate.com%20-%20Forza%20Horizon%204%20Reveal%20Trailer%20%20E3%202018_480p.mp4?v=1610367920079" controls></video>
             </div>
             <div class='row'>
                 <div class='col-lg-6 col-sm-12 text-center text-white align-self-center p-5'>
@@ -39,10 +48,10 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid download-section forza-background">
-        <div class="row">
+    <div class="container-fluid download-section forza-background d-flex align-items-center">
+        <div class="row w-100">
             <div class="col-lg-12 text-center align-self-center">
-                <h1 class="text-center mb-4"><a class="btn-download" target="_blank" href="https://forzamotorsport.net/en-us/games/fh4">Adquira AGORA!</a></h1>
+                <a class="btn-download" target="_blank" href="https://forzamotorsport.net/en-us/games/fh4">Adquira AGORA!</a>
             </div>
         </div>
     </div>

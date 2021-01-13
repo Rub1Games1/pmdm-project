@@ -6,6 +6,7 @@ html, body {
 }
 
 .banner {
+    position: relative;
     height: 100vh;
     background-color: rgb(204, 35, 44);
     display: flex;
@@ -70,45 +71,29 @@ html, body {
     font-size: 75px;
 }
 
-.fa {
-    margin-bottom: 7.5vh;
-}
-
 .fa-angle-down {
     margin-bottom: 7.5vh;
     animation: upDown 1s infinite;
 }
 
 .games {
-    min-height: 100vh;
-    height: auto !important;
+    height: auto;
     background-color: rgb(20,20,20)
 }
 
 .title > h1 {
     line-height: 55px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 5%;
 }
 
 .title {
     position: relative;
     margin: 0;
     color: white;
-    height: 50%;
     font-size: 50px;
     text-align: center;
     letter-spacing: 5px;
     text-transform: uppercase;
-}
-
-@media screen and (max-width: 1025px) {
-    .title {
-        height: 100vh;
-    }
 }
 
 .red {
@@ -138,7 +123,7 @@ html, body {
     display: block;
     margin: 1.5%;
     position: fixed;
-    top: 87.5%;
+    bottom: 0;
     background-color: white;
     border: 2px solid black;
     display: inline-block;
@@ -171,17 +156,39 @@ html, body {
     position: absolute;
     top: -15px;
     left: 20px;
+    z-index: 99;
 }
+
 
 .btn-outline-primary{
     border-color: transparent;
     color:  white;
     background-color:  rgba(30,30,30,0.5);
-    margin-top:30px;
+    margin-top:10px;
 }
 
 .btn-outline-primary:hover{
     border-color: transparent;
     color:  rgb(0, 0, 0);
     background-color:  rgba(30,30,30,0.3);
+}
+
+@media screen and (max-width: 767px) {
+    .btn-group {
+      display: none;
+    }
+}
+
+.navbar {
+  background-color: transparent !important;
+  position: absolute !important;
+  z-index: 99 !important;
+}
+
+.navbar-toggle.collapsed {
+    background-color: #000 !important;
+}
+
+.fa {
+    cursor: pointer;
 }

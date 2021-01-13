@@ -35,7 +35,7 @@ video {
 img { 
     width:100%;
     height:auto;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 .img-inicial {
@@ -52,13 +52,18 @@ img {
     object-position: 0 50%;
 }
 
+.god-img-inicial {
+    height: 500px;
+    object-position: 0 35%;
+}
+
 /* bottom arrows*/
 
 .menu {
     display: block;
     margin: 1.5%;
     position: fixed;
-    top: 87.5%;
+    bottom: 0;
     background-color: white;
     border: 2px solid black;
     display: inline-block;
@@ -89,12 +94,6 @@ img {
 
 /* top menu */
 
-.btn-group {
-    position: absolute;
-    top: -15px;
-    left: 20px;
-}
-
 .btn {
     margin-right: 10px;
 }
@@ -103,7 +102,7 @@ img {
     border-color: transparent;
     color:  white;
     background-color:  rgba(30,30,30,0.5);
-    margin-top:30px;
+    margin-top: 10px;
 }
 
 .btn-outline-primary:hover{
@@ -112,15 +111,27 @@ img {
     background-color:  rgba(30,30,30,0.3);
 }
 
-@media screen and (max-width: 496px) {
+@media screen and (max-width: 767px) {
     .btn-group {
       display: none;
     }
+    .col, .row, video, .video-trailer, .col-sm-12, img {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .col-sm-12 > img:hover {
+      transform: none !important;
+  }
 }
 
 /* top menu */
 
 /*container, columns and rows*/
+.container-god {
+    height: 100%;
+    position: relative; /* magic sauce II */
+    display: inline-table;
+}
 
 .container-fluid {
     background-repeat: no-repeat !important;
@@ -130,6 +141,7 @@ img {
 }
 
 .row {
+    position: relative;
     margin: 0;
     display: flex;
     align-items: center;
@@ -137,12 +149,8 @@ img {
     height: inherit;
 }
 
-.col-lg-6 {
-    padding: 40px;
-}
-
-.col-sm-12 {
-    padding: 2.5%;
+.col-lg-12 , .col-lg-4, .col-sm-12 {
+    padding: 50px;
 }
 
 .col-sm-12 > img {
@@ -169,6 +177,10 @@ img {
     background: url("https://d2ofqe7l47306o.cloudfront.net/games/1920x1080/forza-horizon-4-car-30.jpg");
 }
 
+.god-background {
+    background: url("https://cdn.glitch.com/fd0d8884-e38b-41ec-88c5-15d3a666001b%2FGod-of-War-4.jpg?v=1610408317997")
+}
+
 .gray-background {
     background-color: rgba(0,0,0,0.5)
 }
@@ -190,8 +202,14 @@ img {
 
 /* download section */
 .download-section {
-    height: 25vh;
+    min-height: 200px;
+    max-height: 480px;
 }
+
+.download-section-kratos {
+    min-height: 75vh;
+}
+
 .btn-download {
     background-color: red;
     padding: 15px;
@@ -200,6 +218,7 @@ img {
     border-radius: 25px 5px 15px 5px;
     transition: 1s;
     width: 25%;
+    font-size: 20px;
 }
 
 .btn-download:hover {
@@ -223,14 +242,13 @@ blockquote {
 
 
 .gallery-img:hover {
-    transform: scale(1.25);
+    transform: scale(1.05);
 }
 
 .download-section {
     background-color: rgba(19, 19, 19,0.7);
     text-align: center;
 }
-
 
 .jumbotron-fluid {
     color: white;
@@ -241,6 +259,118 @@ blockquote {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+}
+
+.god-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* magic sauce */
+    z-index: -99;
+}
+.bg-no-vid {
+    background-size: cover !important;
+    background: url("https://cdn.glitch.com/fd0d8884-e38b-41ec-88c5-15d3a666001b%2Ff07c559b0289454eba1e73d0a966654a.jpg?v=1610408900737");
+}
+
+.wrapper-god {
+    color: white;
+    padding: 2.5em;
+    background-color: rgba(0,0,0,.6);
+}
+
+.navbar {
+  background-color: transparent !important;
+  position: absolute !important;
+  z-index: 99 !important;
+}
+
+.navbar-toggle.collapsed {
+    background-color: #000 !important;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 75%;
+    }
+}
+
+.img-wrapper {
+    position: absolute;
+}
+
+.no-border {
+    perspective: 600px;
+    width: 47.5vh;
+    border: none !important;
+    margin-bottom: 5px;
+}
+
+.no-border:hover {
+    transform: none !important;
+}
+
+.txt {
+    font-size: 25px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.center {
+    top: 35%;
+}
+
+.align-items-end {
+    margin-bottom: 25px;
+}
+
+#KratosParent {
+    perspective: 200px;
+}
+
+.fa {
+    cursor: pointer;
+}
+
+.pes-background {
+    background: url("https://images3.alphacoders.com/952/thumb-1920-952165.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+
+.informacao-video {
+    background-color: rgba(36, 36, 36, 0.7);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.pes-img-inic {
+    height: 400px !important;
+    object-fit: cover !important;
+    object-position: 0 75% !important;
+}
+
+.video-trailer {
+    background-color: black !important;
+    padding: 5%;
+}
+
+.video-trailer > h1 {
+    padding: 0 5% 5% 5%;
+}
+
+.border-right {
+    border-right: 2px solid white !important;
 }
 
 /*Stuff*/

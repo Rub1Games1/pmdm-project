@@ -1,25 +1,34 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="src/css/main.css">
         <link rel="stylesheet" href="src/css/template.css">
     </head>
     <body>
         <div id="leftMenu" class="menu"><i class="fa fa-arrow-left"></i></div>
         <div id="rightMenu" class="menu"><i class="fa fa-arrow-right"></i></div>
-        <div class="btn-group">
-            <a href="index.html"><button class="btn btn-outline-primary">Home</button></a>
-            <a href="index1.html"><button class="btn btn-outline-primary">CS:GO</button></a>
-            <a href="index2.html"><button class="btn btn-outline-primary">Cyberpunk</button></a>
-            <a href="index3.html"><button class="btn btn-outline-primary">FIFA Vs PES</button></a>
-            <a href="index4.html"><button class="btn btn-outline-primary">Home</button></a>
-        </div>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active"><a href="index.html"><button class="btn btn-outline-primary">Home</button></a></li>
+                <li class="nav-item"><a href="index1.html"><button class="btn btn-outline-primary">CS:GO</button></a></li>
+                <li class="nav-item"><a href="index2.html"><button class="btn btn-outline-primary">Cyberpunk 2077</button></a></li>
+                <li class="nav-item"><a href="index3.html"><button class="btn btn-outline-primary">PES Vs FIFA</button></a></li>
+                <li class="nav-item"><a href="index4.html"><button class="btn btn-outline-primary">Forza Horizon 4</button></a></li>
+                <li class="nav-item"><a href="index5.html"><button class="btn btn-outline-primary">God of War</button></a></li>
+            </ul>
+            </div>
+          </nav>
         <section class="banner">
             <img class="banner-img" src="https://png.pngtree.com/png-vector/20190909/ourlarge/pngtree-ninja-e-sports-logo-vector-illustration-ninja-gaming-mascot-png-image_1726562.jpg">
             <div class="section-footer text-center">
@@ -29,10 +38,10 @@
         <section id="games" class="container-fluid games">
             <div class="title">
                 <h1>
-                    4 Games <span class="red"> You</span> Need to Know
+                    5 Games <span class="red"> You</span> Need to Know
                 </h1>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center pb-5">
                 <div class="col-lg col-md-6 col-sm-6">
                     <a href="index1.html">
                         <div class="card bg-dark text-white">
@@ -58,7 +67,7 @@
                 <div class="col-lg col-md-6 col-sm-6">
                     <a href="index3.html">
                         <div class="card bg-dark text-white">
-                            <img class="card-img img" src=https://images.daznservices.com/di/library/GOAL/8b/a5/fifa-20-pes2020-split_o7rbt1kbvuhw1v3o81enojeyg.jpg?t=133613985&quality=100" alt="Card image">
+                            <img class="card-img img" src="https://images.daznservices.com/di/library/GOAL/8b/a5/fifa-20-pes2020-split_o7rbt1kbvuhw1v3o81enojeyg.jpg?t=133613985&quality=100" alt="PESFifaImage">
                             <video class="card-img display-none" src="src/video/pes_fifa.mp4" muted></video>
                             <div class="card-img-overlay">
                               <h5 class="card-title hidden">FIFA Vs PES</h5>
@@ -69,16 +78,28 @@
                 <div class="col-lg col-md-6 col-sm-6">
                     <a href="index4.html">
                         <div class="card bg-dark text-white">
-                            <img class="card-img img" src="https://i.pinimg.com/originals/ff/c3/8d/ffc38d9bce22d7a9eaa07b890e3af1a2.jpg" alt="Card image">
+                            <img class="card-img img" src="https://compass-ssl.xbox.com/assets/6a/31/6a31393d-b0cc-4833-8e82-fd3a2c6b6e19.jpg?n=FH4_GLP-Page-Hero-1084_1920x1080_02.jpg" alt="ForzaImage">
+                          <video class="card-img display-none" src="https://cdn.glitch.com/fd0d8884-e38b-41ec-88c5-15d3a666001b%2Fforza.mp4?v=1610198198496" muted></video>
                             <div class="card-img-overlay">
-                              <h5 class="card-title hidden">CS:GO</h5>
+                              <h5 class="card-title hidden">Forza</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg col-md-6 col-sm-6">
+                    <a href="index5.html">
+                        <div class="card bg-dark text-white">
+                            <img class="card-img img" src="https://cdn.glitch.com/fd0d8884-e38b-41ec-88c5-15d3a666001b%2F357451.png?v=1610408318712" alt="GodofWar">
+                          <video class="card-img display-none" src="https://cdn.glitch.com/fd0d8884-e38b-41ec-88c5-15d3a666001b%2FGod%20Of%20War%20_%20Fan-Made%20Story%20Trailer%20_%20You%20will%20always%20be%20a%20monster%20(SPOILERS).mp4?v=1610407246471" muted></video>
+                            <div class="card-img-overlay">
+                              <h5 class="card-title hidden">God of War</h5>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
-        <footer class="bg-dark text-white text-center text-lg-start">
+        <footer class="bg-dark text-white text-center">
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
               © 2020 Copyright: Rúben Cipriano, David Sobral, Hugo Fernandes
             </div>
